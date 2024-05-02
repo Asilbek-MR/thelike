@@ -7,18 +7,19 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /code
 
 COPY ./requirements.txt .
-
 RUN apt-get update -y && \
-    apt-get install -y netcat && \
-    pip install --upgrade pip && \
-    pip install -r requirements.txt && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+apt-get install -y netcat && \
+pip install --upgrade pip && \
+pip install -r requirements.txt && \
+apt-get clean && \
+rm -rf /var/lib/apt/lists/*
 
 ADD ./backend /code/backend
 ADD ./devops /code/devops
 
+RUN chmod +x /code/devops/backend/local-entrypoint.sh
 RUN chmod +x /code/devops/backend/server-entrypoint.sh
 # RUN chmod +x /code/devops/backend/worker-entrypoint.sh
-RUN chmod +x /code/devops/backend/local-entrypoint.sh
+# RUN ["chmod", "+x", "/code/devops/backend/local-entrypoint.sh"]
+# RUN chmod +x /code/devops/backend/local-entrypoint.sh
 # RUN chmod +x /code/devops/backend/flower-entrypoint.sh
