@@ -31,6 +31,8 @@ def trigger_error(request):
 urlpatterns = [
     # path("sentry-debug/", trigger_error),
     path("admin/", admin.site.urls),
+    # path("h/", include('poster.urls')),
+    path("h/", include('simple.urls',namespace="simple")),
     # Auth
     path("auth/", include("rest_framework.urls", namespace="rest_framework")),
     

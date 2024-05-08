@@ -45,7 +45,8 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 LOCAL_APPS = [
 'apps.poster',
-'apps.accounts'
+'apps.accounts',
+"apps.simple",
 ]
 
 INSTALLED_APPS = [
@@ -61,6 +62,7 @@ INSTALLED_APPS = [
     "drf_yasg",
     "corsheaders",
     "django_filters",
+    
 ] + LOCAL_APPS
 
 MIDDLEWARE = [
