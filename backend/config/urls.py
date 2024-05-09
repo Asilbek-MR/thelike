@@ -32,7 +32,7 @@ urlpatterns = [
     # path("sentry-debug/", trigger_error),
     path("admin/", admin.site.urls),
     # path("h/", include('poster.urls')),
-    path("h/", include('simple.urls',namespace="simple")),
+    path("home/", include('apps.simple.urls')),
     # Auth
     path("auth/", include("rest_framework.urls", namespace="rest_framework")),
     
