@@ -4,10 +4,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Registration or Sign Up form in HTML CSS | CodingLab </title> 
+    <title> Registration form for TheLike </title> 
     <link rel="stylesheet" href="{% static 'registr/style.css' %}">
    </head>
 <body>
+    
   <div class="wrapper">
     <h2>Registration for TheLike</h2>
     <form action="#">
@@ -32,6 +33,7 @@
       </div>
       <div class="text">
         <h3>Already have an account? <a href="{% url 'login' %}">Login now</a></h3>
+        <h3>Back to Home <a href="{% url 'home' %}">TheLike</a></h3>
       </div>
     </form>
   </div>
