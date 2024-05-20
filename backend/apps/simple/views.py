@@ -14,3 +14,7 @@ def registr(request):
 
 def login(request):
     return render(request, 'login.html')
+
+
+def offer(request):
+    return render(request,'offer.html')
