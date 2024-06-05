@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -43,36 +43,36 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
   <!-- ***** Preloader End ***** -->
-
+  
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+  <header class="header-area header-sticky bg-light text-dark">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <h1>TheLike</h1>
+                        <h1 class="text-dark">TheLike</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Serach Start ***** -->
                     <div class="search-input">
                       <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
+                        <input class="text-dark border border-primary" type="text" placeholder="Search..." id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search text-dark"></i>
                       </form>
                     </div>
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                      <li class="scroll-to-section"><a href="#team">Team</a></li>
-                      <li class="scroll-to-section"><a href="{% url 'offer' %}">Offers</a></li>
-                      <li class="scroll-to-section"><a href="{% url 'registr' %}">Register Now!</a></li>
+                      <li class="scroll-to-section"><a href="/" class="active text-dark">Home</a></li>
+                      <li class="scroll-to-section"><a href="#services" class="text-dark">Services</a></li>
+                      <li class="scroll-to-section"><a href="#courses" class="text-dark">Courses</a></li>
+                      <li class="scroll-to-section"><a href="#team" class="text-dark">Team</a></li>
+                      <li class="scroll-to-section"><a href="{% url 'offer' %}" class="text-dark">Offers</a></li>
+                      <li class="scroll-to-section"><a href="{% url 'registr' %}" class="text-dark">Register Now!</a></li>
                   </ul>   
-                    <a class='menu-trigger'>
+                    <a class='menu-trigger text-dark'>
                         <span>Menu</span>
                     </a>
                     <!-- ***** Menu End ***** -->
@@ -82,9 +82,9 @@ https://templatemo.com/tm-586-scholar
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
+  
+  
   {% block content %}
-  
-  
   <div class="services section" id="services">
     <div class="container">
       <div class="row">
